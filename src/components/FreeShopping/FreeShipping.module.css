@@ -1,0 +1,47 @@
+.container {
+    padding: 0.4rem 5rem;
+}
+
+.free {
+    transition: .5s;
+}
+
+.free:hover {
+    background-color: #F0F5F9;
+}
+
+.icon {
+    color: #00509C;
+    margin-top: 4px;
+    margin-left: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.nav:hover {
+    text-decoration: none;
+}
+
+.all {
+    align-items: center;
+}
+
+.all:hover .icon {
+    transform: scale(1.3);
+}
+
+.p {
+    color: #00509C;
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+@media(max-width: 576px){
+    .free p{
+        font-size: 18px;
+    }
+    .container {
+        padding: 0.4rem 2rem;
+    }
+}
