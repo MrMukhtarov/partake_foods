@@ -25,6 +25,7 @@ header .right i {
     color: #005099;
     font-weight: 600;
     line-height: 22px;
+    cursor: pointer;
 }
 
 header .right i:hover {
@@ -43,7 +44,7 @@ header .tab:hover::after {
 }
 
 
-
+/* productsDropDown */
 .producsDropDown .left {
     display: flex;
     flex-direction: column;
@@ -64,6 +65,7 @@ header .tab:hover::after {
 }
 .producsDropDown .right .box:hover .boxLink{
     color: #91DFB9;
+    transition: .5s;
 }
 
 .producsDropDown .right .box .boxLink {
@@ -72,6 +74,129 @@ header .tab:hover::after {
 
  header .producsDropDown {
    display: none;
-   margin-top: 50px;
+   padding: 3.5rem 0;
 } 
+/* .producsDropDown */
 
+/* ourstory */
+
+.ourstory .box a{
+    transition: .4s;
+}
+.ourstory .box:hover a{
+    color: #91DFB9;
+    transition: .4s;
+}
+.ourstory {
+    padding: 3.5rem 0;
+    background-color: white;
+    display: none;
+}
+.ourstory img{
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.ourstory .containerOurStory{
+    padding: 0 7rem;
+}
+
+/* ourstory */
+
+/* blogDropwDown */
+
+.blogDropDown{
+    padding: 3.5rem 0;
+    margin: auto;
+    background-color: white;
+}
+.blogDropDown .containerblogDropDown{
+    padding: 0 12rem;
+}
+.blogDropDown img{
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.blogDropDown .box:hover a{
+    color: #91DFB9;
+    transition: .4s;
+}
+.blogDropDown .box a{
+    transition: .4s;
+}
+/* blogDropwDown */
+
+/* search */
+
+header .search{
+    display: none;
+}
+
+header .search .top{
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+header .search input{
+    border: none;
+    outline: none;
+    width: 95%;
+}
+header .search input::placeholder{
+    color: #005099;
+}
+header .search .inputdiv i{
+    color: #BFD3E5
+}
+header .search .right i{
+    color: #BFD3E5;
+    cursor: pointer;
+}
+header .inputdiv{
+    border: 1px solid #739FC7;
+    padding: 15px 15px;
+    margin: auto;
+    align-items: center;
+    margin-top: 8px;
+    width: 450px
+}
+
+
+header .search .bottom {
+    background-color: transparent;
+}
+header .search .bottom{
+    background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+}
+
+header .inputdiv input:focus::placeholder {
+    color: transparent;
+  }
+  header .blocker{
+   position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: ' ';
+    background: rgba(0,0,0,.5);
+  }
+
+/* search */
+
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
