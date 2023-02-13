@@ -8,7 +8,6 @@ const BasketHeader = () => {
     }
     const hidePopup = () => {
         document.querySelector('.basketHeader').style.display = 'none'
-        
     }
   return (
     <div className="basketHeader">
