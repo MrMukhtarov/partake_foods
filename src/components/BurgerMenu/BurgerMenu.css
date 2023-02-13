@@ -1,0 +1,164 @@
+/* #burgers{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    width: 85%;
+    overflow-x: scroll;
+    display: none;
+}
+#burgers .burgerContainer{
+    padding: 20px;
+}
+#burgers .down{
+  margin-left: 130px;
+  color: #005099;
+}
+#burgers .up{
+    color: #005099;
+  }
+  #burgers .tabName{
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 27px;
+    color: #005099;
+}
+#burgers li{
+    list-style: none;
+}
+#burgers .tabli1 li{
+    margin-top: 20px !important;
+    margin-left: -30px !important;
+}
+#burgers .tabli2 li{
+    margin-top: 20px !important;
+    margin-left: -30px !important;
+}
+#burgers .tabli3 li{
+    margin-top: 20px !important;
+    margin-left: -30px !important;
+}
+
+#burgers .tabli2{
+    display: none;
+}
+#burgers .tabli3{
+    display: none;
+}
+#burgers .top{
+    margin-left: -30px;
+}
+#burgers .exit{
+    color: #005099;
+    font-size: 20px;
+}
+#burgers .hr{
+    color: #005099;
+    height: 1px;
+    background-color: #005099;
+}
+#burgers .blogi{
+    margin-left: 180px;
+}
+#burgers .bottom{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #005099;
+ 
+}
+#burgers .bottoms{
+    position: relative;
+    top: 320px;
+
+}
+#burgers .bottom a{
+    font-size: 20px;
+}
+ */
+
+
+
+
+ #burgers{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    width: 85%;
+    overflow-x: scroll;
+    display: none;
+}
+#burgers .burgerContainer{
+    padding: 20px;
+}
+#burgers .down{
+  margin-left: 130px;
+  color: #005099;
+}
+#burgers .up{
+    color: #005099;
+  }
+  #burgers .tabName{
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 27px;
+    color: #005099;
+}
+#burgers li{
+    list-style: none;
+}
+#burgers .tabli1 li{
+    margin-top: 20px !important;
+    margin-left: -30px !important;
+}
+#burgers .tabli2 li{
+    margin-top: 20px !important;
+    margin-left: -30px !important;
+}
+#burgers .tabli3 li{
+    margin-top: 20px !important;
+    margin-left: -30px !important;
+}
+/* .burgerMenu .tabli1{
+    display: none !important;
+} */
+
+#burgers .tabli2{
+    display: none;
+}
+#burgers .tabli3{
+    display: none;
+}
+#burgers .top{
+    margin-left: -30px;
+}
+#burgers .exit{
+    color: #005099;
+    font-size: 20px;
+}
+#burgers .hr{
+    color: #005099;
+    height: 1px;
+    background-color: #005099;
+}
+#burgers .blogi{
+    margin-left: 180px;
+}
+#burgers .bottom{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #005099;
+ 
+}
+#burgers .bottoms{
+    position: relative;
+    top: 320px;
+
+}
+#burgers .bottom a{
+    font-size: 20px;
+}
