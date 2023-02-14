@@ -1,0 +1,94 @@
+
+#homeCtr .left{
+    background-color: #F7B9E1;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center;
+    cursor: pointer;
+}
+#homeCtr .center{
+    background-color: #ABDBE9;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center;
+    cursor: pointer;
+}
+#homeCtr .right{
+    background-color: #60CF94;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center;
+    cursor: pointer;
+}
+#homeCtr h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #005099;
+    margin-bottom: 20px;
+}
+#homeCtr .shop{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #005099;
+    text-decoration: none;
+    position: relative;
+    transition: .3s
+}
+#homeCtr .shop:hover{
+    color: white;
+    transition: .3s;
+}
+#homeCtr .shop::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    color: white;
+    bottom: -6px;
+    width: 100%;
+    height: 4px;
+    left: 0;
+}
+#homeCtr a:first-child{
+    text-decoration: none;
+}
+#homeCtr img{
+    margin-top: 40px;
+}
+#homeCtr .left img{
+    width: 300px;
+    object-fit: contain;
+    height: 300px;
+}
+#homeCtr .center img{
+    width: 265px;
+    object-fit: contain;
+    height: 300px;
+}
+#homeCtr .right img{
+    width: 265px;
+    object-fit: contain;
+    height: 300px;
+}
+
+
+@media(max-width: 576px){
+    #homeCtr .all{
+        display: flex;
+        flex-direction: column;
+    }
+    #homeCtr .left img{
+        width: 220px;
+        object-fit: contain;
+        height: 300px;
+    }
+    #homeCtr h2{
+        font-size: 26px;
+    }
+}
+
+

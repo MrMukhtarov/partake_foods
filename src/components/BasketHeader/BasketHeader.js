@@ -8,6 +8,7 @@ const BasketHeader = () => {
     }
     const hidePopup = () => {
         document.querySelector('.basketHeader').style.display = 'none'
+        document.body.classList.remove("stop-scrolling");
     }
   return (
     <div className="basketHeader">

@@ -5,6 +5,9 @@ header a {
     line-height: 22px;
     position: relative;
 }
+header .container{
+    padding: 0 0.2rem !important;
+}
 
 header a:hover {
     text-decoration: none;
@@ -18,7 +21,7 @@ header .left,
 
 header {
     padding: 1.2rem 0;
-    background-color: #FBC9B6;
+    background-color: #FABFA8;
 }
 
 header .right i {
@@ -78,7 +81,12 @@ header .tab:hover::after {
 
  header .producsDropDown {
    display: none;
-   padding: 3.5rem 0;
+   padding: 3.5rem 3rem;
+   position: absolute;
+   top: 110px;
+   left: 0;
+   z-index: 1;
+   width: 100%;
 } 
 /* .producsDropDown */
 
@@ -95,6 +103,11 @@ header .tab:hover::after {
     padding: 3.5rem 0;
     background-color: white;
     display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 110px;
+    left: 0;
 }
 .ourstory img{
     width: 180px;
@@ -116,6 +129,11 @@ header .tab:hover::after {
     display: none;
     margin: auto;
     background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 110px;
+    left: 0;
 }
 .blogDropDown .containerblogDropDown{
     padding: 0 12rem;
@@ -199,6 +217,9 @@ header .inputdiv input:focus::placeholder {
   }
 
 /* search */
+header .search{
+    z-index: 1;
+}
 .stop-scrolling {
     height: 100%;
     overflow: hidden;

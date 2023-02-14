@@ -7,6 +7,7 @@
     right: 0;
     padding: 10px 0;
     display: none;
+    z-index: 1;
 }
 
 .basketHeader h3 {

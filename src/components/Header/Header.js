@@ -17,7 +17,7 @@ const Header = () => {
     const prodLevae = () => {
         document.getElementById('prodDrop').style.display = 'none'
         document.querySelector('.logo').src = 'https://cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x.png?v=1654228576%201x,%20//cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x@2x.png?v=1654228576%202x'
-        document.querySelector('header').style.backgroundColor = '#FBC9B6'
+        document.querySelector('header').style.backgroundColor = '#FABFA8'
         document.querySelector('header').style.transition = '.5s'
         document.querySelector('header').style.borderTop = 'none'
     }
@@ -34,7 +34,7 @@ const Header = () => {
     const storyClose = () => {
         document.getElementById('ourStory').style.display = 'none'
         document.querySelector('.logo').src = 'https://cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x.png?v=1654228576%201x,%20//cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x@2x.png?v=1654228576%202x'
-        document.querySelector('header').style.backgroundColor = '#FBC9B6'
+        document.querySelector('header').style.backgroundColor = '#FABFA8'
         document.querySelector('header').style.transition = '.5s'
         document.querySelector('header').style.borderTop = 'none'
     }
@@ -51,7 +51,7 @@ const Header = () => {
     const blogClose = () => {
         document.getElementById('blogDropDown').style.display = 'none'
         document.querySelector('.logo').src = 'https://cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x.png?v=1654228576%201x,%20//cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x@2x.png?v=1654228576%202x'
-        document.querySelector('header').style.backgroundColor = '#FBC9B6'
+        document.querySelector('header').style.backgroundColor = '#FABFA8'
         document.querySelector('header').style.transition = '.5s'
         document.querySelector('header').style.borderTop = 'none'
     }
@@ -67,6 +67,7 @@ const Header = () => {
       }
     const hidePopup = () => {
         document.getElementById('searchDiv').style.display = 'none'
+        document.body.classList.remove("stop-scrolling");
     }
     // input
     // --------------
@@ -119,15 +120,15 @@ const Header = () => {
                         <div className="right col-lg-10">
                             <div className="box col-lg-3 text-center">
                                 <NavLink to={'/'}><img className='img-fluid mb-2' src='https://cdn.shopify.com/s/files/1/0012/2296/7353/files/menu-1.png?v=1640771968' alt='img'/></NavLink>
-                                <NavLink className='boxLink' to={'/'}>VARIETY PACKS</NavLink>
+                                <NavLink className='boxLink' to={'/'}><br/> VARIETY PACKS</NavLink>
                             </div>
                             <div className="box col-lg-3 text-center">
                                 <NavLink to={'/'}><img className='img-fluid mb-2' src='https://cdn.shopify.com/s/files/1/0012/2296/7353/files/menu-2.png?v=1640771968' alt='img'/></NavLink>
-                                <NavLink className='boxLink' to={'/'}>COOKIES</NavLink>
+                                <NavLink className='boxLink' to={'/'}><br/>COOKIES</NavLink>
                             </div>
                             <div className="box col-lg-3 text-center">
                                 <NavLink to={'/'}><img className='img-fluid mb-2' src='https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Baking_Mixes_Main_Menu_771a0291-8df9-4274-a0d8-5d23b709c8e1.png?v=1642497529' alt='img'/></NavLink>
-                                <NavLink className='boxLink' to={'/'}>BAKING MIXES</NavLink>
+                                <NavLink className='boxLink' to={'/'}><br/>BAKING MIXES</NavLink>
                             </div>
                             <div className="box col-lg-3 text-center">
                                 <NavLink to={'/'}><img className='img-fluid mb-2' src='https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Breakfast_Mixes_Main_Menu_ceee14d2-324b-4824-ab8e-07945334bfef.png?v=1642497596' alt='img'/></NavLink>
@@ -144,11 +145,11 @@ const Header = () => {
                    <div className="d-flex">
                         <div className="box col-lg-3 text-center">
                         <NavLink to='/'> <img className='img-fluid' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Denise_Vivi_Homepage_square.jpg?v=1642469781" alt="img" />
-                            ABOUT US</NavLink>
+                           <br /> ABOUT US</NavLink>
                         </div>
                         <div className="box col-lg-3 text-center">
                         <NavLink to='/'>  <img className='img-fluid' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/FAQ_556_556_1.png?v=1642470306" alt="img" />
-                            FAQ</NavLink>
+                           <br /> FAQ</NavLink>
                         </div>
                         <div className="box col-lg-3 text-center">
                         <NavLink to='/'> <img className='img-fluid' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Ingredients_Menu_220x220_a254a351-a43f-4326-9630-6b50707c68ff.png?v=1642081962" alt="img" />
@@ -156,7 +157,7 @@ const Header = () => {
                         </div>
                         <div className="box col-lg-3 text-center">
                         <NavLink to='/'>  <img className='img-fluid' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/press_menu_750x.png?v=1642470439" alt="img" />
-                            PRESS</NavLink>
+                           <br /> PRESS</NavLink>
                         </div>
                     </div>
                    </div>
