@@ -1,0 +1,223 @@
+.ingredients{
+    background-color: #91DFB9;
+    padding: 10rem 7rem;
+}
+.ingredients .left h2{
+    font-weight: 700;
+    font-size: 45px;
+    color: #005099;
+    margin-bottom: 30px;
+}
+.ingredients .left p{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 34px;
+    color: #005099;
+    margin-bottom: 30px !important;
+}
+.ingredients .left a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: #005099;
+    position: relative;
+}
+.ingredients .left a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    background-color: white;
+    color: white;
+    height: 4px;
+}
+
+.ingredients .right .box{
+    transition: .5s;
+}
+.ingredients .right .box img{
+    width: 145px;
+    height: 145px;
+    object-fit: fill;
+    position: relative;
+}
+.ingredients .right{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.ingredients .right .x{
+    border: 1px solid #007367;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #007367;
+    color: white;
+}
+.ingredients .right i{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+}
+.ingredients .gingerBox{
+    position: relative;
+}
+.ingredients .ginger{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 190px;
+    border-radius: 20px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    z-index: 1;
+}
+.ingredients .ginger h5{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #005099;
+}
+.ingredients .ginger p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #005099;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .ingredients{
+    padding: 4rem 7rem;
+    background-color: #91dfb9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ingredients .leftingredients h2{
+    color: #005099;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ingredients .leftingredients p{
+    color: #005099;
+    font-size: 22px;
+    line-height: 35px;
+    margin: 35px 0;
+}
+
+.ingredients .leftingredients a{
+    color: #005099;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+}
+
+.ingredients .leftingredients a::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 24px;
+    left: 0;
+    background-color: #fff;
+}
+
+.ingredients .rightingredients{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: end;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredients .rightingredients .imgdiv{
+    width: 30%;
+    position: relative;
+}
+
+.ingredients .rightingredients .imgdiv img{
+    width: 60%;
+   
+}
+
+.ingredients .rightingredients .imgdiv #openText{
+    cursor: pointer;
+    position: absolute;
+    left: 70px;
+    color: #fff;
+    font-size: 13px;
+    background-color: #007367;
+    border-radius: 50%;
+    padding: 5px 6px;
+    font-weight: 200;
+}
+
+.ingredients .rightingredients .ginger{
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px;
+    position: absolute;
+    top:20px;
+    left: 90px;
+    width: 160px;
+    z-index: 1;
+}
+
+.ingredients .rightingredients .none{
+    display: none;
+}
+.ingredients .rightingredients .block{
+    display: block;
+}
+
+.ingredients .rightingredients .ginger h5{
+    color: #005099;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.ingredients .rightingredients .ginger p{
+    color: #005099;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+.ingredients .imgbox1{
+    position: relative;
+}
+
+
+.ingredients .blockeringredients{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: ' ';
+    background: #d2cfcf;
+    z-index: -22222;
+} */
