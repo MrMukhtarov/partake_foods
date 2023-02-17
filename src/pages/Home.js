@@ -1,8 +1,8 @@
 import React from 'react'
-import HomeCategories from '../components/HomeCategories/HomeCategories'
+import HomeCategories from '../components/HomeComponents/HomeCategories/HomeCategories'
 import Ingredients from '../components/HomeComponents/Ingredients/Ingredients'
-import HomeHero from '../components/HomeHero/HomeHero'
-import Safe from '../components/Safe/Safe'
+import HomeHero from '../components/HomeComponents/HomeHero/HomeHero'
+import Safe from '../components/HomeComponents/Safe/Safe'
 
 const Home = () => {
   return (

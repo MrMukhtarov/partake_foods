@@ -197,7 +197,7 @@ const Header = () => {
                                 <i className="fa-solid fa-magnifying-glass text-end"></i>
                                 </div>
                             </div>
-                            <div className="right col-lg-1 col-1 p-0">
+                            <div className="right col-1 p-0">
                             <i onClick={exitIcon} className="fa-solid fa-xmark" title='close'></i>
                             </div>
                            </div>
