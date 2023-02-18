@@ -1,6 +1,6 @@
 .ingredients {
     background-color: #91DFB9;
-    padding: 7rem 7rem;
+    padding: 7rem 5rem;
 }
 
 .ingredients .left h2 {
@@ -24,6 +24,12 @@
     font-size: 18px;
     color: #005099;
     position: relative;
+    transition: .3s;
+}
+
+.ingredients .left a:hover {
+    color: white;
+    transition: .3s;
 }
 
 .ingredients .left a::after {
@@ -61,6 +67,7 @@
     background-color: #007367;
     color: white;
     transform: rotate(0deg);
+    transition: .3s ease-in-out;
 }
 
 .ingredients .right .x {
@@ -70,6 +77,7 @@
     background-color: #fff;
     color: #007367;
     transform: rotate(45deg);
+    transition: .3s ease-in-out;
 }
 
 .ingredients .right i {
@@ -108,7 +116,10 @@ h5 {
 
 .ingredients .ginger,
 .vanilla,
-.oats, .flaxs p {
+.oats,
+.flaxs,
+.rosemary,
+.cinnamon p {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
@@ -143,6 +154,7 @@ h5 {
     left: -180px;
     z-index: 1;
 }
+
 .ingredients .flaxBox {
     position: relative;
 }
@@ -157,4 +169,126 @@ h5 {
     top: -160px;
     left: 20px;
     z-index: 1;
+}
+
+.ingredients .rosemaryxBox {
+    position: relative;
+}
+
+.ingredients .rosemary {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 190px;
+    border-radius: 30px;
+    position: absolute;
+    top: -170px;
+    left: 35px;
+    z-index: 1;
+}
+
+.ingredients .cinnamonBox {
+    position: relative;
+}
+
+.ingredients .cinnamon {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 190px;
+    border-radius: 30px;
+    position: absolute;
+    top: -220px;
+    left: -190px;
+    z-index: 1;
+}
+
+@media(max-width: 576px) {
+    .ingredients .all {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ingredients .right .box img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ingredients {
+        padding-right: 0;
+        padding-left: 0;
+        padding: 3rem 0;
+    }
+
+    .ingredients .right {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .ingredients .ginger,
+    .vanilla,
+    h5 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .ingredients .ginger,
+    .vanilla,
+    .oats,
+    .flaxs,
+    .rosemary,
+    .cinnamon p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .ingredients .vanilla {
+        width: 210px;
+        border-radius: 20px;
+        top: 40px;
+        left: -50px;
+    }
+    .ingredients .oats {
+        padding: 5px;
+        width: 210px;
+        border-radius: 20px;
+        top: 20px;
+        left: -200px;
+    }
+    .ingredients .flaxs {
+        padding: 5px;
+        width: 210px;
+        border-radius: 20px;
+        top: -120px;
+    }
+    .ingredients .rosemary {
+        padding: 5px;
+        width: 210px;
+        border-radius: 20px;
+        top: -135px;
+        left: -35px;
+    }
+    .ingredients .cinnamon {
+        padding: 6px;
+        width: 210px;
+        border-radius: 20px;
+        top: -160px;
+        left: -200px;
+    }
+    .ingredients .left{
+        margin-top: 20px;
+    }
+    .ingredients .left h2 {
+        font-size: 28px;
+    }
+    .ingredients .left p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .ingredients .left a {
+        font-size: 15px;
+    }
+    
 }

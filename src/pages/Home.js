@@ -3,6 +3,7 @@ import HomeCategories from '../components/HomeComponents/HomeCategories/HomeCate
 import Ingredients from '../components/HomeComponents/Ingredients/Ingredients'
 import HomeHero from '../components/HomeComponents/HomeHero/HomeHero'
 import Safe from '../components/HomeComponents/Safe/Safe'
+import BestSellers from '../components/HomeComponents/BestSellers/BestSellers'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <HomeCategories/>
       <Safe/>
       <Ingredients/>
+      <BestSellers/>
     </div>
   )
 }

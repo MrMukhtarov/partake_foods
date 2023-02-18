@@ -83,7 +83,7 @@ header .tab:hover::after {
    display: none;
    padding: 3.5rem 3rem;
    position: absolute;
-   top: 110px;
+   top: 95px;
    left: 0;
    z-index: 1;
    width: 100%;
@@ -106,7 +106,7 @@ header .tab:hover::after {
     position: absolute;
     width: 100%;
     z-index: 1;
-    top: 110px;
+    top: 95px;
     left: 0;
 }
 .ourstory img{
@@ -132,7 +132,7 @@ header .tab:hover::after {
     position: absolute;
     width: 100%;
     z-index: 1;
-    top: 110px;
+    top: 95px;
     left: 0;
 }
 .blogDropDown .containerblogDropDown{

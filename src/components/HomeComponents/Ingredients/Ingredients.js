@@ -7,10 +7,14 @@ const Ingredients = () => {
   const [vanilla, setVanilla] = useState("none");
   const [oats, setOats] = useState("none");
   const [flax, setFlax] = useState("none");
+  const [rosemary, setRosemary] = useState("none");
+  const [cinnamon, setCinnamon] = useState("none");
   const [icon, setIcon] = useState("plus");
   const [icon2, setIcon2] = useState("plus");
   const [icon3, setIcon3] = useState("plus");
   const [icon4, setIcon4] = useState("plus");
+  const [icon5, setIcon5] = useState("plus");
+  const [icon6, setIcon6] = useState("plus");
 
   // GINGER
   const refOne = useRef(null);
@@ -86,6 +90,7 @@ const Ingredients = () => {
     }
   };
   // OATS
+  // -------
   //FLAX
   const refFour = useRef(null);
 
@@ -110,10 +115,59 @@ const Ingredients = () => {
     }
   };
   //FLAX
+  // -------
+  //ROSEMARY
+  const refFive = useRef(null);
 
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside5, true);
+  }, []);
+
+  const handleClickOutside5 = (e) => {
+    if (!refFive.current.contains(e.target)) {
+      setRosemary("none");
+      setIcon5("plus");
+    }
+  };
+
+  const RosemaryInfo = () => {
+    if (rosemary === "none") {
+      setRosemary("block");
+      setIcon5("x");
+    } else {
+      setRosemary("none");
+      setIcon5("plus");
+    }
+  };
+  //ROSEMARY
+  // -------
+  //CINNAMON
+  const refSix = useRef(null);
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside6, true);
+  }, []);
+
+  const handleClickOutside6 = (e) => {
+    if (!refSix.current.contains(e.target)) {
+      setCinnamon("none");
+      setIcon6("plus");
+    }
+  };
+
+  const CinnamonInfo = () => {
+    if (cinnamon === "none") {
+      setCinnamon("block");
+      setIcon6("x");
+    } else {
+      setCinnamon("none");
+      setIcon6("plus");
+    }
+  };
+  //CINNAMON
   return (
     <div className="ingredients">
-      <div className="all row justify-content-between">
+      <div className="all row justify-content-between col-12">
         <div className="left col-lg-5">
           <h2>Because ingredients matter.</h2>
           <p>
@@ -123,12 +177,12 @@ const Ingredients = () => {
           </p>
           <NavLink to="/">LEARN MORE ABOUT OUR INGREDIENTS</NavLink>
         </div>
-        <div className="right col-lg-6">
+        <div className="right col-lg-6 col-12">
           <div
             ref={refOne}
             id="ginerB"
             onClick={ginerInfo}
-            className={`box gingerBox col-lg-3`}
+            className={`box gingerBox col-lg-3 col-3`}
           >
             <img
               src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/HP-ginger_f08ff2d2-b048-47de-85cc-f427b88c2984.png?v=1640590204"
@@ -145,7 +199,7 @@ const Ingredients = () => {
             </div>
           </div>
           <div
-            className="box col-lg-3 vanillaBox"
+            className="box col-lg-3 vanillaBox col-3"
             ref={refTwo}
             onClick={vanillaInfo}
           >
@@ -163,7 +217,7 @@ const Ingredients = () => {
             </div>
           </div>
           <div
-            className="box oatsBox col-lg-3"
+            className="box oatsBox col-lg-3 col-3"
             onClick={OatsInfo}
             ref={refThree}
           >
@@ -178,7 +232,7 @@ const Ingredients = () => {
             </div>
           </div>
           <div
-            className="box col-lg-3 flaxBox"
+            className="box col-lg-3 flaxBox col-3"
             onClick={FlaxInfo}
             ref={refFour}
           >
@@ -195,19 +249,42 @@ const Ingredients = () => {
               </p>
             </div>
           </div>
-          <div className="box col-lg-3">
+          <div
+            className="box col-lg-3 rosemaryBox col-3"
+            onClick={RosemaryInfo}
+            ref={refFive}
+          >
             <img
               src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/rosemary_c8ac195c-64d6-4964-987d-abf6337bd71c_750x.png?v=1642487662"
               alt="img"
             />
-            <i className="fa-solid fa-plus plus"></i>
+            <i className={`fa-solid fa-plus plus ${icon5}`}></i>
+            <div id="rosemaryDiv" className={`rosemary ${rosemary}`}>
+              <h5>Rosemary</h5>
+              <p>
+                With a very distinct flavor, rosemary is full of antioxidants
+                and anti-inflammatory compounds.
+              </p>
+            </div>
           </div>
-          <div className="box col-lg-3">
+          <div
+            className="box col-lg-3 cinnamonBox col-3"
+            onClick={CinnamonInfo}
+            ref={refSix}
+          >
             <img
               src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/HP-cinammon_240x_4e7dcc87-d964-487d-8697-69dafed1e5ca.png?v=1640667337"
               alt="img"
             />
-            <i className="fa-solid fa-plus plus"></i>
+            <i className={`fa-solid fa-plus plus ${icon6}`}></i>
+            <div id="cinnamonDiv" className={`cinnamon ${cinnamon}`}>
+              <h5>Cinnamon</h5>
+              <p>
+                Traced back to Ancient Egypt, Cinnamon has been used for
+                thousands of years as medicine and is now the 2nd most commonly
+                used spice in the U.S.
+              </p>
+            </div>
           </div>
         </div>
       </div>

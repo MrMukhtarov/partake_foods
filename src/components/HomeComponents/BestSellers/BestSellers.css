@@ -1,0 +1,136 @@
+.bestSellers {
+    padding: 4rem 5rem;
+}
+
+.bestSellers .title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #005099;
+    margin-bottom: 60px;
+}
+
+.bestSellers .boxLink {
+    text-decoration: none;
+}
+
+.bestSellers .bottom a {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #005099;
+    transition: .3s;
+}
+
+.bestSellers .box:hover .bottom a {
+    color: #91dfb9;
+    transition: .3s;
+}
+
+.bestSellers .box:hover .quick-add {
+    display: block;
+    transition: .10s;
+}
+
+.bestSellers .box {
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    transition: .5s;
+}
+
+.bestSellers .bottom {
+    margin-top: 20px;
+}
+
+.bestSellers .bottom i {
+    color: #005099;
+    font-size: 20px;
+}
+
+.bestSellers .bottom .stars {
+    margin-top: 6px;
+}
+
+.bestSellers .stars span {
+    margin-left: 8px;
+    color: #005099;
+}
+
+.bestSellers .price {
+    margin-top: 7px;
+}
+
+.bestSellers .price span {
+    font-size: 18px;
+}
+
+.bestSellers .absolute {
+    background-color: #91DFB9;
+    border-radius: 100%;
+    position: absolute;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    left: 270px;
+    top: -50px;
+}
+
+.bestSellers .absolute span {
+    color: #005099;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.bestSellers .quick-add {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #005099;
+    width: 80%;
+    background-color: white;
+    padding: 15px;
+    display: none;
+}
+
+.bestSellers .quick-add:hover {
+    background-color: #91DFB9;
+    border: none;
+}
+
+.bestSellers .quick-add:hover a {
+    color: white;
+}
+
+.bestSellers img {
+    height: 500px;
+    object-fit: cover;
+    background-color: #F5F5F5;
+}
+
+.bestSellers .quick-add a {
+    color: #005099;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 576px) {
+    .bestSellers {
+        padding: 2rem 20px;
+    }
+
+    .bestSellers .title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+}
