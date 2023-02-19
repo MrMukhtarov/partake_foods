@@ -19,6 +19,7 @@
     line-height: 27px;
     color: #005099;
     transition: .3s;
+    text-decoration: none;
 }
 
 .bestSellers .box:hover .bottom a {
@@ -114,6 +115,9 @@
     text-decoration: none;
 }
 
+.bestSellers .crs{
+    display: none;
+}
 
 
 
@@ -132,5 +136,17 @@
         font-size: 28px;
         margin-bottom: 10px;
     }
-
+    .bestSellers .crs{
+        display: block;
+    }
+    .bestSellers .all{
+        display: none;
+    }
+    .bestSellers .bottom a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .owl-dots{
+        display: none;
+    }
 }

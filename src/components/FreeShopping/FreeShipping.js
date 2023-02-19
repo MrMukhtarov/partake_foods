@@ -6,7 +6,7 @@ const FreeShipping = () => {
   return (
     <div className={`${styles.free}`}>
       <div className={`${styles.container}`}>
-        <NavLink to={"/"} className={`${styles.nav}`}>
+        <NavLink to={"/"} className={`${styles.nav} text-decoration-none`}>
           <div className={`${styles.all} d-flex justify-content-center`}>
             <p className={`${styles.p}`}>Free Shipping on Orders $29.99+</p>
             <i className={`${styles.icon} fa-solid fa-arrow-right`}></i>

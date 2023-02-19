@@ -26,6 +26,8 @@ const Header = () => {
     // ourstoryDropDown
     const storyOpen = () => {
         document.getElementById('ourStory').style.display = 'block'
+        document.getElementById('ourStory').style.opacity = '1'
+        document.getElementById('ourStory').style.transition = 'opacity 1s ease-out'
         document.querySelector('header').style.backgroundColor = 'white'
         document.querySelector('header').style.transition = '.5s'
         document.querySelector('.logo').src = 'https://cdn.shopify.com/s/files/1/0012/2296/7353/files/blue-logo_190x.png?v=1654228954'
@@ -33,6 +35,8 @@ const Header = () => {
     }
     const storyClose = () => {
         document.getElementById('ourStory').style.display = 'none'
+        document.getElementById('ourStory').style.opacity = '0'
+        document.getElementById('ourStory').style.transition = 'opacity 1s ease-out'
         document.querySelector('.logo').src = 'https://cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x.png?v=1654228576%201x,%20//cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x@2x.png?v=1654228576%202x'
         document.querySelector('header').style.backgroundColor = '#FABFA8'
         document.querySelector('header').style.transition = '.5s'
